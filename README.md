@@ -28,7 +28,7 @@ Serie.S04E05.HDTV-LOL.3.srt
 ##Instalación
 
  - 	**Opción 1:**
-Accede a la sección [releases](/releases) y descarga los binarios, tienes 2 versiones:
+Accede a la sección [releases](https://github.com/castro732/AutoSubDownloader/releases) y descarga los binarios, tienes 2 versiones:
     * **Versión instalable**, que añade la sección al menú inicio y un autorun automático.
     * **Versión portable**, solo necesitas ejecutar el archivo *ASD.exe* y el programa se comenzara a ejecutar.
 
