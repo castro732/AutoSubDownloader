@@ -1,5 +1,16 @@
 #NoEnv
+#SingleInstance force
 
+If 0 > 0
+{
+	File = %1%
+	SplitPath, File, OutFileName, dir, Ext, OutNameNoExt
+	; Chequear la extension del archivo
+	If Instr(",avi,mkv,mp4,mpg,wmv,divx,mov,mpeg,wmp,flv,vob,", "," Ext ",")
+	{
+		SubDownload(OutFileName, dir, Ext, OutNameNoExt, AllSubs)
+	}
+}
 ; CTRL + SHIFT + S
 ; Principal - Descarga el mejor sub por episodia
 ~^+s::ASD(0)
