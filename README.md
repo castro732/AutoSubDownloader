@@ -1,20 +1,36 @@
 ![logo](http://i.imgur.com/hwviI2A.png)
 #AutoSubDownloader 
 
-AutoSubDownloader es un pequeño script, hecho con AutoHotkey y Python, que sirve para descargar automáticamente los subtítulos de series desde [SubDivx](http://www.subdivx.com) y [TuSubtitulo.com](http://www.tusubtitulo.com)
+AutoSubDownloader es un pequeño script, hecho con AutoHotkey y Python, que sirve para descargar automáticamente los subtítulos de series (por ahora solo series) desde [SubDivx](http://www.subdivx.com) y [TuSubtitulo.com](http://www.tusubtitulo.com)
 
 <div align="center">
         <img width="100%" src="http://i.imgur.com/ObG2dv8.gif" alt="About screen" title="About screen"</img>
         <img height="0" width="8px">
 </div>
 
+##Características
+- Descarga el subtitulo apropiado (basándose en resolución, codec, release group) desde subdivx y lo renombra igual que el archivo de video al presionar *Ctrl + Shift + S*.
+			Ejemplo:
+		```
+			Serie.S04E05.HDTV-LOL.mp4
+			Serie.S04E05.HDTV-LOL.srt
+		```
+
+- Descarga todos los subtítulos disponibles (desde subdivx) al presionar *Ctrl + Shift + A* y los renombra al estilo:
+		```
+			Serie.S04E05.HDTV-LOL.mp4
+			Serie.S04E05.HDTV-LOL.1.srt
+			Serie.S04E05.HDTV-LOL.2.srt
+			Serie.S04E05.HDTV-LOL.3.srt
+			...
+		```
 
 ##Instalación
 
  - 	**Opción 1:**
 Accede a la sección [releases](/releases) y descarga los binarios, tienes 2 versiones:
-		- Versión instalable, que añade la sección al menú inicio y un autorun automático.
-		- Versión portable, solo necesitas ejecutar el archivo *ASD.exe* y el programa se comenzara a ejecutar.
+    * **Versión instalable**, que añade la sección al menú inicio y un autorun automático.
+    * **Versión portable**, solo necesitas ejecutar el archivo *ASD.exe* y el programa se comenzara a ejecutar.
 
 - **Opción 2:**
 Descarga el código fuente y ejecutar el archivo *ASD.ahk*
