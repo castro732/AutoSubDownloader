@@ -10,24 +10,20 @@ AutoSubDownloader es un pequeño script, hecho con AutoHotkey y Python, que sirv
 
 ##Características
 - Descarga el subtitulo apropiado (basándose en resolución, codec, release group) desde subdivx y lo renombra igual que el archivo de video al presionar *Ctrl + Shift + S*.
-			Ejemplo:
-		```
-		Serie.S04E05.HDTV-LOL.mp4
-		
-		Serie.S04E05.HDTV-LOL.srt
-		```
+		Ejemplo:
+```
+Serie.S04E05.HDTV-LOL.mp4
+Serie.S04E05.HDTV-LOL.srt
+```
 
 - Descarga todos los subtítulos disponibles (desde subdivx) al presionar *Ctrl + Shift + A* y los renombra al estilo:
-		```
-		Serie.S04E05.HDTV-LOL.mp4
-		
-		Serie.S04E05.HDTV-LOL.1.srt
-		
-		Serie.S04E05.HDTV-LOL.2.srt
-		
-		Serie.S04E05.HDTV-LOL.3.srt
-		...
-		```
+```
+Serie.S04E05.HDTV-LOL.mp4
+Serie.S04E05.HDTV-LOL.1.srt
+Serie.S04E05.HDTV-LOL.2.srt
+Serie.S04E05.HDTV-LOL.3.srt
+...
+```
 
 ##Instalación
 
