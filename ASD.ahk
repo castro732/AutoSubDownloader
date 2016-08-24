@@ -95,16 +95,22 @@ SubDownload(OutFileName, dir, Ext, OutNameNoExt, AllSubs)
 	; Ejecutar el script de python que descarga el sub desde SubDivX
 	; MsgBox, subdivx.py %sName% S%Sseason%E%sEpisode% %sKeyword%
 	IfExist, %A_WorkingDir%\subdivx.py
-		runwait subdivx.py %sName% S%Sseason%E%sEpisode% %sKeyword% %AllSubs% ,, 
+		runwait subdivx.py %sName% S%Sseason%E%sEpisode% %sKeyword% %AllSubs% ,, Hide
 	IfExist, %A_WorkingDir%\subdivx.exe
-		runwait subdivx.exe %sName% S%Sseason%E%sEpisode% %sKeyword% %AllSubs% ,, 
-	Progress, 90
+		runwait subdivx.exe %sName% S%Sseason%E%sEpisode% %sKeyword% %AllSubs% ,, Hide
+	If (AllSubs = "AllSubs"){
+		Progress, 90
+	}
+
 	numberOfSubs := ErrorLevel
 	file = sub.zip
 	fileName = sub
 	FileMove, %A_WorkingDir%\%file%, %dir%
-	Sleep, 500
-	Progress, Off
+	If (AllSubs = "AllSubs"){
+		Sleep, 500
+		Progress, Off
+	}
+
 		
   ; Unzip subtitulo - Se necesita 7-Zip
   if (numberOfSubs>1){
