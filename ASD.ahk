@@ -12,7 +12,7 @@ If 0 > 0
 	}
 }
 ; CTRL + SHIFT + S
-; Principal - Descarga el mejor sub por episodia
+; Principal - Descarga el mejor sub por episodio
 ~^+s::ASD(0)
 
 ; CTRL + SHIFT + A
