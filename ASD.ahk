@@ -154,6 +154,7 @@ SubDownload(OutFileName, dir, Ext, OutNameNoExt, AllSubs)
 ; the.odd.couple.2015.201.hdtv-lol.mp4
 ; The.Flash.2014.S02E22.HDTV.x264.REPACK-LOL[rarbg].mp4
 ; Suits.6x01.HDTV.x264-KILLERS.mkv
+; Supports more files
 GetShowName(FileName)
 {
 	IfInString, FileName, .
