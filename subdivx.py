@@ -22,6 +22,7 @@ else:
 # Check arguments
 # Expected input: subdivx.py sName sEpisode keyword
 #                    Arg1     Arg2   Arg3    Arg4
+#
 # For example: subdivx.py the+flash+2014 s02e04 hdtv
 if (len(sys.argv)<2):
 	print ('ERROR: No hay argumentos')
