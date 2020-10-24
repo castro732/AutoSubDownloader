@@ -100,8 +100,6 @@ for x in range(0,len(subs)):
 			break
 	pass
 
-# input('Press ENTER to exit')
-
 # This is a HACK - Its intended purpose is to pass
 # the number of subs to the AHK script in order to be
 # able of unzipping them all.
