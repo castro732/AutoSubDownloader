@@ -65,7 +65,6 @@ ASD(AllSubs){
 	Return
 }
 
-
 SubDownload(OutFileName, dir, Ext, OutNameNoExt, AllSubs)
 {
 	; Obtener el nombre de la serie
@@ -110,8 +109,7 @@ SubDownload(OutFileName, dir, Ext, OutNameNoExt, AllSubs)
 		Sleep, 500
 		Progress, Off
 	}
-
-		
+	
   ; Unzip subtitulo - Se necesita 7-Zip
   if (numberOfSubs>1){
   	Loop, %numberOfSubs% {
@@ -145,7 +143,6 @@ SubDownload(OutFileName, dir, Ext, OutNameNoExt, AllSubs)
 
   Return
 }
-
 
 ; ### Funcion que obtiene el nombre de la serie dado un nombre de archivo ###
 ; Soporta los siguientes tipos de nombre (igual para obtener temporada y episodio):
